@@ -13,7 +13,7 @@ Once you have an app deployed in OpenShift you can take advantage of some contin
 ## A bit of configuration
 We are going to do some integration and coding with an external git repository.  For this lab we are going to use github, if you don't already have an account, [you can create one here][3].
 
-OK, let's fork the dc-metro-map app from **my** account into **your** github account.  Goto [https://github.com/RedHatGov/openshift-workshops][4] and look to the top right for the "Fork" button.
+OK, let's fork the dc-metro-map app from **my** account into **your** github account.  Goto [https://github.com/presidioworkshops/kubernetes-workshops][4] and look to the top right for the "Fork" button.
 
 <img src="../images/ocp-lab-rollbacks-fork.png" width="500"><br/>
 
@@ -44,7 +44,7 @@ Select version <b>[6]</b> then click <b><u>advanced options</u></b> and fill out
 <p>
 <table>
 <tr><td><b>Name</b></td><td>dc-metro-map</td></tr>
-<tr><td><b>Git Repository URL</b></td><td>https://github.com/<b>YOUR_ACCOUNT</b>/openshift-workshops.git</td></tr>
+<tr><td><b>Git Repository URL</b></td><td>https://github.com/<b>YOUR_ACCOUNT</b>/kubernetes-workshops.git</td></tr>
 <tr><td><b>Context Dir</b></td><td>/dc-metro-map</td></tr>
 </table>
 </p>
@@ -218,14 +218,9 @@ You can integrate your CI/CD tools to do rollbacks with the REST API. See the Ro
 # Summary
 In this lab we saw how you can configure a source code repository to trigger builds with webhooks.  This webhook could come from Github, Jenkins, Travis-CI, or any tool capable of sending a URL POST.  Keep in mind that there are other types of build triggers you can setup.  For example: if a new version of the upstream RHEL image changes.  We also inspected our deployment history and did a rollback of our running deployment to one based on an older image with the click of a button.
 
-# More Information
-[Triggers][2]</br>
-[Rollbacks With the REST API][5]
-
 [1]: https://docs.openshift.com/enterprise/3.1/dev_guide/builds.html#build-triggers
-[2]: https://docs.openshift.com/enterprise/3.1/dev_guide/deployments.html#triggers
 [3]: https://github.com/join?source=header-home
-[4]: https://github.com/RedHatGov/openshift-workshops.git
-[5]: https://docs.openshift.com/enterprise/3.1/rest_api/openshift_v1.html#create-a-deploymentconfigrollback-2
+[4]: https://github.com/presidioworkshops/kubernetes-workshops.git
+
 
 {{< importPartial "footer/footer.html" >}}

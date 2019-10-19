@@ -19,7 +19,7 @@ We can do this either via the command line or the web console.  You decide which
 </blockquote>
 
 ```bash
-$ oc new-app --name=dc-metro-map https://github.com/RedHatGov/openshift-workshops.git --context-dir=dc-metro-map
+$ oc new-app --name=dc-metro-map https://github.com/presidioworkshops/kubernetes-workshops.git --context-dir=dc-metro-map
 $ oc expose service dc-metro-map
 ```
 
@@ -63,7 +63,7 @@ Select 'advanced options'
 <p>
 <table>
 <tr><td><b>Name</b></td><td>dc-metro-map</td></tr>
-<tr><td><b>Git Repository URL</b></td><td><a href>https://github.com/RedHatGov/openshift-workshops.git</a></td></tr>
+<tr><td><b>Git Repository URL</b></td><td><a href>https://github.com/presidioworkshops/kubernetes-workshops.git</a></td></tr>
 <tr><td><b>Context Dir</b></td><td>/dc-metro-map</td></tr>
 </table>
 </p>

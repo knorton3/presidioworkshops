@@ -19,7 +19,7 @@ Only if you don't already have it running, add it with the following steps.
 > <i class="fa fa-terminal"></i> Goto the terminal and type these commands:
 
 ```bash
-$ oc new-app --name=dc-metro-map https://github.com/RedHatGov/openshift-workshops.git --context-dir=dc-metro-map
+$ oc new-app --name=dc-metro-map https://github.com/presidioworkshops/kubernetes-workshops.git --context-dir=dc-metro-map
 $ oc expose service dc-metro-map
 ```
 
@@ -78,7 +78,7 @@ Notice the information about the configuration of how this app gets built.  In p
 $ oc describe build/dc-metro-map-1
 ```
 
-This shows us even more about the deployed container's build and source code including exact commit GUID for this build.  We can also can see the commit's author, and the commit message.  You can inspect the code by opening a web browser and pointing it to: https://github.com/RedHatGov/openshift-workshops/commit/[COMMIT_GUID]
+This shows us even more about the deployed container's build and source code including exact commit GUID for this build.  We can also can see the commit's author, and the commit message.  You can inspect the code by opening a web browser and pointing it to: https://github.com/presidioworkshops/kubernetes-workshops/commit/[COMMIT_GUID]
 
 {{% /panel %}}
 

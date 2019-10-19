@@ -18,7 +18,7 @@ $ oc delete project cicd-{{< span "userid" "YOUR#" >}}
 ```
 
 ## Lets deploy an application
-To demonstrate Blue/Green deployments, we'll use a simple application that renders a colored box as an example. Using your GitHub account, please fork the following https://github.com/RedHatGov/openshift-workshops [project][1].
+To demonstrate Blue/Green deployments, we'll use a simple application that renders a colored box as an example. Using your GitHub account, please fork the following https://github.com/presidioworkshops/kubernetes-workshops [project][1].
 
 You should be comfortable deploying an app at this point, but here are the steps anyway:
 
@@ -96,7 +96,7 @@ Pretty easy, right?
 
 If you want to read more about Blue/Green check out [this post][2] with a longer description as well as links to additional resources.
 
-[1]: https://github.com/RedHatGov/openshift-workshops
+[1]: https://github.com/presidioworkshops/kubernetes-workshops
 [2]: http://martinfowler.com/bliki/BlueGreenDeployment.html
 
 {{< importPartial "footer/footer.html" >}}
